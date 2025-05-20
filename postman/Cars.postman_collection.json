@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "83afb883-f6ca-4593-abf1-0dbc3e435760",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17437975"
+	},
+	"item": [
+		{
+			"name": "Search Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/car-inventory/v1/cars/search?brand=Nissan&releaseDate=2023-08-22&price=100&currency=USD&sort=brand&order=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car-inventory",
+						"v1",
+						"cars",
+						"search"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "Nissan"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2023-08-22"
+						},
+						{
+							"key": "price",
+							"value": "100"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						},
+						{
+							"key": "sort",
+							"value": "brand"
+						},
+						{
+							"key": "order",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Output Cars - XML Format",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/car-inventory/v1/cars/output?brand=Nissan&releaseDate=2023-08-22&price=100&currency=USD&sort=brand&order=ASC&format=XML",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car-inventory",
+						"v1",
+						"cars",
+						"output"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "Nissan"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2023-08-22"
+						},
+						{
+							"key": "price",
+							"value": "100"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						},
+						{
+							"key": "sort",
+							"value": "brand"
+						},
+						{
+							"key": "order",
+							"value": "ASC"
+						},
+						{
+							"key": "format",
+							"value": "XML"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Output Cars - JSON Format",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/car-inventory/v1/cars/output?brand=Nissan&releaseDate=2023-08-22&price=100&currency=USD&sort=brand&order=ASC&format=JSON",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car-inventory",
+						"v1",
+						"cars",
+						"output"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "Nissan"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2023-08-22"
+						},
+						{
+							"key": "price",
+							"value": "100"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						},
+						{
+							"key": "sort",
+							"value": "brand"
+						},
+						{
+							"key": "order",
+							"value": "ASC"
+						},
+						{
+							"key": "format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Output Cars - Table Format",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/car-inventory/v1/cars/output?brand=Nissan&releaseDate=2023-08-22&price=100&currency=USD&sort=brand&order=ASC&format=TABULAR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car-inventory",
+						"v1",
+						"cars",
+						"output"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "Nissan"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2023-08-22"
+						},
+						{
+							"key": "price",
+							"value": "100"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						},
+						{
+							"key": "sort",
+							"value": "brand"
+						},
+						{
+							"key": "order",
+							"value": "ASC"
+						},
+						{
+							"key": "format",
+							"value": "TABULAR"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
