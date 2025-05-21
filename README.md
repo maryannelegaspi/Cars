@@ -2,15 +2,17 @@
 
 Cars is an application that running on Java 17 and Springboot 3.4.5. This is a system that uploads data from both CarBrand.csv and CarType.xml file to build a working car model. Both files must be present in src/main/resources to be able to run the application.
 
-CarApplication provides an API that can be tested and interacted with using Swagger UI and Postman.
+CarApplication provides an API that can be tested and interacted with using Swagger UI or Postman.
 
 ## How to Use Swagger to Test the Application
 
 ### Prerequisites
 
-- To be able to test this application you must clone the repository and run the application using your preferred IDE.
-- Ensure the application is up and running.
-- You must have access to the Swagger UI, which is available at `http://localhost:8088/car-inventory/swagger-ui/index.html`
+- An IDE and Java 17 is required in order to run the application.
+- To be able to test this application you must clone the repository and run the `main` method of `CarsApplication.java` using your preferred IDE.
+- Ensure the application is up and running. You will see a log similar to this:
+<br> `2025-05-21T10:49:39.195+08:00  INFO 2040 --- [cars] [           main] com.pst.cars.CarsApplication             : Started CarsApplication in 1.643 seconds (process running for 1.844)`
+- Access the Swagger UI, which is available at `http://localhost:8088/car-inventory/swagger-ui/index.html`
 
 ### Steps to Use Swagger UI
 
@@ -28,15 +30,15 @@ CarApplication provides an API that can be tested and interacted with using Swag
 
 3. **Test an Endpoint**
     - Click on the endpoint you want to test. For example, if you want to test a `GET /car-inventory/v1/cars/search` endpoint, go to the `GET /car-inventory/v1/cars/search` section.
-    - You'll see a button to "Try it out". Clicking on this will open fields where you can provide required input (**RequestBody** please see below sample).
+    - You'll see a button to "Try it out". Clicking on this will open fields where you can provide required input (**Query Param** please see below sample).
 
 4. **Execute the Request**
-    - After providing the necessary parameters(please see below for sample RequestBody), click on the "Execute" button to send the request.
+    - After providing the necessary parameters(please see below for sample Query Param), click on the "Execute" button to send the request.
     - Swagger UI will display the response directly in the browser, including:
         - The HTTP status code (e.g., `200 OK`, `404 Not Found`, `500 Internal Server Error`).
         - The response body, which could be in JSON, XML, or another format.
 
-### Sample RequestBody
+### Sample Query Param
 {
     "brand": "Nissan",
     "releaseDate": "2023-08-22",
